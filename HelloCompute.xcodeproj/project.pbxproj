@@ -12,6 +12,10 @@
 		C4B7F08125D8455300039313 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4B7F08025D8455300039313 /* Assets.xcassets */; };
 		C4B7F08425D8455300039313 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4B7F08325D8455300039313 /* Preview Assets.xcassets */; };
 		C4B7F08D25D845C400039313 /* kukkuCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B7F08C25D845C400039313 /* kukkuCellView.swift */; };
+		C4B7F09225D8486000039313 /* kukuRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B7F09125D8486000039313 /* kukuRowView.swift */; };
+		C4B7F09525D8491B00039313 /* kukuTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B7F09425D8491B00039313 /* kukuTableView.swift */; };
+		C4B7F09825D84B3A00039313 /* Compute.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B7F09725D84B3A00039313 /* Compute.swift */; };
+		C4B7F09E25D8588400039313 /* Shader.metal in Sources */ = {isa = PBXBuildFile; fileRef = C4B7F09D25D8588400039313 /* Shader.metal */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,12 @@
 		C4B7F08325D8455300039313 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C4B7F08525D8455300039313 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C4B7F08C25D845C400039313 /* kukkuCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kukkuCellView.swift; sourceTree = "<group>"; };
+		C4B7F09125D8486000039313 /* kukuRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kukuRowView.swift; sourceTree = "<group>"; };
+		C4B7F09425D8491B00039313 /* kukuTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kukuTableView.swift; sourceTree = "<group>"; };
+		C4B7F09725D84B3A00039313 /* Compute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Compute.swift; sourceTree = "<group>"; };
+		C4B7F09A25D8501300039313 /* ShaderTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShaderTypes.h; sourceTree = "<group>"; };
+		C4B7F09B25D8509400039313 /* HelloCompute-Bridgeing-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HelloCompute-Bridgeing-Header.h"; sourceTree = "<group>"; };
+		C4B7F09D25D8588400039313 /* Shader.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Shader.metal; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,10 +66,16 @@
 			children = (
 				C4B7F07C25D8455100039313 /* HelloComputeApp.swift */,
 				C4B7F07E25D8455100039313 /* ContentView.swift */,
+				C4B7F09725D84B3A00039313 /* Compute.swift */,
 				C4B7F08025D8455300039313 /* Assets.xcassets */,
 				C4B7F08525D8455300039313 /* Info.plist */,
 				C4B7F08225D8455300039313 /* Preview Content */,
 				C4B7F08C25D845C400039313 /* kukkuCellView.swift */,
+				C4B7F09125D8486000039313 /* kukuRowView.swift */,
+				C4B7F09425D8491B00039313 /* kukuTableView.swift */,
+				C4B7F09A25D8501300039313 /* ShaderTypes.h */,
+				C4B7F09B25D8509400039313 /* HelloCompute-Bridgeing-Header.h */,
+				C4B7F09D25D8588400039313 /* Shader.metal */,
 			);
 			path = HelloCompute;
 			sourceTree = "<group>";
@@ -142,8 +158,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				C4B7F07F25D8455100039313 /* ContentView.swift in Sources */,
+				C4B7F09525D8491B00039313 /* kukuTableView.swift in Sources */,
 				C4B7F07D25D8455100039313 /* HelloComputeApp.swift in Sources */,
 				C4B7F08D25D845C400039313 /* kukkuCellView.swift in Sources */,
+				C4B7F09225D8486000039313 /* kukuRowView.swift in Sources */,
+				C4B7F09E25D8588400039313 /* Shader.metal in Sources */,
+				C4B7F09825D84B3A00039313 /* Compute.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +303,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = shogo.HelloCompute;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/shogonobuhara/Xcode/HelloCompute/HelloCompute/HelloCompute-Bridgeing-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -305,6 +326,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = shogo.HelloCompute;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/shogonobuhara/Xcode/HelloCompute/HelloCompute/HelloCompute-Bridgeing-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
